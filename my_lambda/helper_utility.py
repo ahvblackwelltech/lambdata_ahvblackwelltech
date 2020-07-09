@@ -1,8 +1,17 @@
-<<<<<<< HEAD
-import pandas as pd
 
-
-def splitDate():
-=======
 import pandas as pd
->>>>>>> master
+import numpy as np
+from datetime import datetime
+
+nba_teams = ['Bucks', 'Warriors', 
+             'Clippers', 'Lakers',
+             'Bulls', 'Celtics']
+
+''' Single function to take a list, 
+    turn it into a series and add it 
+    to a dataframe as a new column 
+'''
+
+def convertList():
+    '''  '''
+    return
