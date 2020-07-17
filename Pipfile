@@ -10,6 +10,7 @@ docker = "*"
 pandas = "*"
 autopep8 = "*"
 twine = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.8"
