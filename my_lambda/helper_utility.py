@@ -38,6 +38,21 @@ class MyDataSplitter():
         converted_df['Month'] = pd.DatetimeIndex(converted_df[date_col]).month
         converted_df['Day'] = pd.DatetimeIndex(converted_df[date_col]).day
         return converted_df
+    
+    def print_split_summary(self, X_train, X_val, X_test):
+
+        print('########### TRAINING DATA ###########')
+        print(f'X_train Shape: {X_train.shape}')
+        display(X_train.describe(include='all').transpose())
+
+        print('########### VALIDATION DATA ###########')
+        print(f'X_val Shape: {X_val.shape}')
+        display(X_val.describe(include='all').transpose())
+
+        print('########### Test DATA ###########')
+        print(f'X_test Shape: {X_test.shape}')
+        display(X_test.describe(include='all').transpose())
+
 
 
 
